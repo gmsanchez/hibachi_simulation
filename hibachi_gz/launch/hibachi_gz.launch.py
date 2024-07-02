@@ -26,7 +26,7 @@ def generate_launch_description():
                           description='x-axis initial position'),
         DeclareLaunchArgument('y', default_value='0',
                           description='y-axis initial position'),
-        DeclareLaunchArgument('z', default_value='0.2',
+        DeclareLaunchArgument('z', default_value='0.17',
                           description='z-axis initial position'),
         DeclareLaunchArgument('yaw', default_value='0',
                           description='YAW initial orientation'),
