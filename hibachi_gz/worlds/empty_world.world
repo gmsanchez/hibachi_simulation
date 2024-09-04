@@ -27,6 +27,8 @@
     <plugin
       filename="gz-sim-magnetometer-system"
       name="gz::sim::systems::Magnetometer">
+      <use_units_gauss>false</use_units_gauss>
+      <use_earth_frame_ned>false</use_earth_frame_ned>
     </plugin>
 
     <plugin
@@ -47,11 +49,14 @@
       <longitude_deg>-43.202501</longitude_deg>
       <elevation>0</elevation>
       <heading_deg>0</heading_deg> -->
-      <latitude_deg>38.161479</latitude_deg>
-      <longitude_deg>-122.454630</longitude_deg>
-      <elevation>488.0</elevation>
+      <latitude_deg>-31.640061833333334</latitude_deg>
+      <longitude_deg>-60.67209583333333</longitude_deg>
+      <elevation>44.4</elevation>
+      <heading_deg>0.0</heading_deg>
     </spherical_coordinates>
 
+    <!-- <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field> -->
+    <magnetic_field>-3.167139084325755e-06 1.7961738194571808e-05 1.2302242794248741e-05</magnetic_field>
 
     <include>
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane</uri>

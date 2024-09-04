@@ -14,14 +14,14 @@ def generate_launch_description():
         "turtlebot3_world.world"],
     )
 
-    gazebo_launch = PathJoinSubstitution(
+    gz_launch = PathJoinSubstitution(
         [FindPackageShare("hibachi_gz"),
         "launch",
         "hibachi_gz.launch.py"],
     )
 
-    gazebo_sim = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([gazebo_launch]),
+    gz_sim = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([gz_launch]),
         launch_arguments = {
             'world_path': world_file,
             'x': '0.0',
@@ -31,6 +31,6 @@ def generate_launch_description():
     )
 
     ld = LaunchDescription([])
-    ld.add_action(gazebo_sim)
+    ld.add_action(gz_sim)
 
     return ld
